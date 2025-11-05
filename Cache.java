@@ -14,5 +14,11 @@ public class Cache<T> {
         array_deque = new ArrayDeque<>(n);
     }
 
-
+    public void add(T item){
+        if (array_deque.size()==n){
+            array_deque.removeFirst();
+        }
+        array_deque.addLast(item);
+    }
+    
 }
