@@ -62,5 +62,9 @@ public class Cache<T> {
         }
         return null;
     }
+
+    public int getSize(){
+        return array_deque.size();
+    }
     
 }
