@@ -34,5 +34,12 @@ public class Cache<T> {
         }
         return false;*/
     }
+
+    public T getFirst(){
+        if (array_deque.isEmpty()){
+            return null;
+        }
+        return array_deque.getFirst();
+    }
     
 }
