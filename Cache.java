@@ -24,5 +24,15 @@ public class Cache<T> {
     public boolean remove(T item){
         return array_deque.remove(item);
     }
+
+    public boolean exists(T item){
+        return array_deque.contains(item); //если equals переопределён или примитивный тип, то все норм будет :)
+        /*for(T element : array_deque){
+            if(element.equals(item)){
+                return true;
+            }
+        }
+        return false;*/
+    }
     
 }
