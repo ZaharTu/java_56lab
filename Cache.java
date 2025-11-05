@@ -41,5 +41,11 @@ public class Cache<T> {
         }
         return array_deque.getFirst();
     }
-    
+
+    public T getLast(){
+        if (array_deque.isEmpty()){
+            return null;
+        }
+        return array_deque.getLast();
+    }
 }
