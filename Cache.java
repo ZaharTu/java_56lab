@@ -20,5 +20,9 @@ public class Cache<T> {
         }
         array_deque.addLast(item);
     }
+
+    public boolean remove(T item){
+        return array_deque.remove(item);
+    }
     
 }
