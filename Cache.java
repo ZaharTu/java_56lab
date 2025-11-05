@@ -48,4 +48,19 @@ public class Cache<T> {
         }
         return array_deque.getLast();
     }
+
+    public T getItemByIndex(int i){
+        if(i>=array_deque.size() || i<0){
+            return null;
+        }
+        int index=0;
+        for(T item : array_deque) {
+            if (index == i) {
+                return item;
+            }
+            index++;
+        }
+        return null;
+    }
+    
 }
